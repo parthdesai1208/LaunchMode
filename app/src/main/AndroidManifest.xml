@@ -28,6 +28,7 @@
         </activity>
         <activity
             android:name=".ActivityB"
+            android:launchMode="singleTop"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
