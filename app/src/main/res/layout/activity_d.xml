@@ -10,7 +10,7 @@
         android:id="@+id/btnD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity D\nGo to B"
+        android:text="Activity D(singleTask)\nGo to B"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

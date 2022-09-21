@@ -10,14 +10,14 @@
         android:id="@+id/btnB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activity B\nGo to C"
+        android:text="Activity B(singleTask)\nGo to C"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+   <!-- <Button
         android:id="@+id/againCallItself"
         app:layout_constraintStart_toStartOf="@id/btnB"
         app:layout_constraintEnd_toEndOf="@id/btnB"
@@ -25,6 +25,6 @@
         android:text="Go to B itself\nB is singleTop"
         android:textAllCaps="false"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

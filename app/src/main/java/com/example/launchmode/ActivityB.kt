@@ -20,10 +20,10 @@ class ActivityB : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.againCallItself.setOnClickListener {
+        /*binding.againCallItself.setOnClickListener {
             val intent = Intent(this,ActivityB::class.java)
             startActivity(intent)
-        }
+        }*/
     }
 
     override fun onNewIntent(intent: Intent?) {
