@@ -15,8 +15,8 @@ class ActivityD : AppCompatActivity() {
         binding = ActivityDBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnD.setOnClickListener {
-            val intent = Intent(this,ActivityB::class.java)
+        binding.againCallItself.setOnClickListener {
+            val intent = Intent(this,ActivityD::class.java)
             startActivity(intent)
         }
     }
