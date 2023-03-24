@@ -8,7 +8,7 @@ import com.example.launchmode.databinding.ActivityABinding
 import com.example.launchmode.databinding.ActivityCBinding
 
 class ActivityC : AppCompatActivity() {
-    lateinit var binding : ActivityCBinding
+    lateinit var binding: ActivityCBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,18 +16,35 @@ class ActivityC : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnC.setOnClickListener {
-            val intent = Intent(this,ActivityD::class.java)
+            val intent = Intent(this, ActivityD::class.java)
             startActivity(intent)
         }
+        Log.e("Launch", "onCreate-C -- TASK ID: $taskId")
     }
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
-        Log.e("Launch","Activity C : onNewIntent")
+        Log.e("Launch", "Activity C : onNewIntent")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.e("Launch","Activity C : onResume")
+        Log.e("Launch", "Activity C : onResume")
+    }
+
+
+    override fun onPause() {
+        super.onPause()
+        Log.e("Launch", "Activity C : onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.e("Launch", "Activity C : onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("Launch", "Activity C : onDestroy")
     }
 }
