@@ -19,6 +19,10 @@ class ActivityD : AppCompatActivity() {
             val intent = Intent(this, ActivityD::class.java)
             startActivity(intent)
         }
+        binding.btnB.setOnClickListener {
+            val intent = Intent(this, ActivityB::class.java)
+            startActivity(intent)
+        }
         Log.e("Launch", "onCreate-D -- TASK ID: $taskId")
     }
 
